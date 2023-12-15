@@ -5,8 +5,8 @@ const ProductCard = ({
   image,
   title,
   paragraphText,
-  price1,
-  price2,
+  originalPrice,
+  newPrice,
   discount,
 }: productCardProps) => {
   return (
@@ -24,13 +24,13 @@ const ProductCard = ({
             {paragraphText}
           </p>
           <div className="flex justify-between items-center">
-            {price1 && (
+            {originalPrice && (
               <p className="text-dark text-[12px] line-through font-medium">
-                {price1}
+                {originalPrice}
               </p>
             )}
-            {price2 && (
-              <p className="text-green text-[12px] font-bold">{price2}</p>
+            {newPrice && (
+              <p className="text-green text-[12px] font-bold">{newPrice}</p>
             )}
             {discount && (
               <p className="bg-lightGreen text-[10px] rounded-[100px] py-[2px] px-[5px]">

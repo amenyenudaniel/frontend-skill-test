@@ -9,7 +9,7 @@ export interface productCardProps {
   image: string;
   title: string;
   paragraphText: string;
-  price1?: string;
-  price2?: string;
+  originalPrice?: string;
+  newPrice?: string;
   discount?: string;
 }
