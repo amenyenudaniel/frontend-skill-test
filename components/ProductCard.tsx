@@ -15,7 +15,7 @@ const ProductCard = ({
     // Container for the entire product card with fixed width and height
     <section className="w-[254px] h-[304px] flex flex-col items-center">
       {/* Card container with shadow, rounded corners, and hover effect */}
-      <div className="shadow-xl rounded-[10px] flex flex-col  w-[234px] h-[292px]  transition duration-500 ease-in-out hover:scale-[1.05]">
+      <div className="shadow-custom rounded-[10px] flex flex-col  w-[234px] h-[292px]  transition duration-500 ease-in-out hover:scale-[1.05]">
         {/* Product image with rounded top corners */}
         <img
           src={image}
